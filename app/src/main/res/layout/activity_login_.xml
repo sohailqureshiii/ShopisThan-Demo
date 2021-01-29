@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Activity">
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/t1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/t1"
+        android:layout_width="263dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/textView5"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="504dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/border"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Mobile"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView5"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="447dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/border"
+        android:text="Get OTP" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="By clicking on Next you Agree Terms and Conditions"
+        android:textColor="#303030" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="66dp"
+        android:gravity="center"
+        android:text="Or"
+        android:textColor="#121212"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView5"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="66dp"
+        android:gravity="center"
+        android:text="Google"
+        android:textColor="#121212"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView3"
+        android:layout_width="67dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/textView5"
+        android:layout_marginBottom="70dp"
+        app:srcCompat="@drawable/gogle" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "823618308940",
+    "project_id": "shopisthan-a8b55",
+    "storage_bucket": "shopisthan-a8b55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823618308940:android:c308b8c937178ef0311de9",
+        "android_client_info": {
+          "package_name": "com.example.shopisthan_bolte"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823618308940-b5i8eg7iujao62pls1r0a5d6hqvgstjl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shopisthan_bolte",
+            "certificate_hash": "0a6d9c6f42ba5763edb4ec331d16fd1dd2893fce"
+          }
+        },
+        {
+          "client_id": "823618308940-7r93cq80q9rjt98h0qgu6necqvbdrieg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlr2l41aFuSAkATfTVE-kv35727HcRjVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823618308940-7r93cq80q9rjt98h0qgu6necqvbdrieg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
