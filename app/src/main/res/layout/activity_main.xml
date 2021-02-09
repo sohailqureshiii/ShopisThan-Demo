@@ -43,39 +43,4 @@
         android:textAllCaps="true"
         android:textSize="30dp" />
 
-    <RelativeLayout
-        android:layout_margin="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:background="#FFD901"
-        />
-
-    <RelativeLayout
-        android:layout_margin="30dp"
-        android:layout_width="10dp"
-        android:layout_height="match_parent"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="300dp"
-        android:background="#FE9A37"
-        />
-
-    <RelativeLayout
-        android:layout_margin="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:background="#E44361"
-        />
-
-    <RelativeLayout
-        android:layout_margin="30dp"
-        android:layout_width="10dp"
-        android:layout_height="match_parent"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp"
-        android:layout_alignParentRight="true"
-        android:background="#00B451"
-        />
 </RelativeLayout>

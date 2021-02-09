@@ -9,17 +9,58 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ShopisThan_bolte">
-        <activity android:name=".GoogleLogin"></activity>
-        <activity android:name=".Home_page" />
-        <activity android:name=".managotp" />
-        <activity android:name=".Login_Activity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".CategoryAppliances"></activity>
+        <activity android:name=".FavActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity
+            android:name=".CategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PhoneLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Explorer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GoogleLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home_page"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".managotp"
+            android:screenOrientation="portrait" />
+        <activity android:name=".AdminAddNewProductActivity" />
+        <activity
+            android:name=".Login_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3965558160186633~5108415315" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 </manifest>

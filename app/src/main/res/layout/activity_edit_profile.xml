@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile">
+    
+    <EditText
+        android:hint="Name"
+        android:id="@+id/editname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:hint="Address"
+        android:id="@+id/editAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/editname"/>
+
+    <EditText
+        android:hint="Phone Number"
+        android:id="@+id/editphoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editAddress"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:hint="Email"
+        android:id="@+id/editemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editphoneNumber"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/editdone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editemail"
+        android:layout_margin="20dp"
+        android:text="Edit Profile"/>
+
+
+
+
+</RelativeLayout>

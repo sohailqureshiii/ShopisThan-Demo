@@ -4,48 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login_Activity">
+    tools:context=".Login_Activity"
+    android:background="@color/white">
 
-    <com.hbb20.CountryCodePicker
-        android:id="@+id/ccp"
-        android:layout_width="255dp"
+    <WebView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/t1"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="11dp"
-        android:layout_marginEnd="88dp"
-        android:layout_marginStart="16dp" />
+        android:id="@+id/web_view"/>
 
-    <EditText
-        android:id="@+id/t1"
-        android:layout_width="263dp"
-        android:layout_height="45dp"
-        android:layout_above="@+id/textView5"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="504dp"
-        android:layout_marginEnd="83dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginStart="16dp"
-        android:background="@drawable/border"
-        android:drawableLeft="@drawable/ic_baseline_phone_24"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="Enter Mobile"
-        android:inputType="textPersonName"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+    <include layout="@layout/custom_toolbar"
+             android:id="@+id/mytoolbar"/>
+
 
     <Button
-        android:id="@+id/b1"
-        android:layout_width="119dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gopopup"
+        android:layout_width="325dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView5"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="447dp"
-        android:layout_marginEnd="84dp"
-        android:layout_marginTop="140dp"
-        android:background="@drawable/border"
-        android:text="Get OTP" />
+        android:layout_below="@+id/or"
+        android:layout_marginTop="61dp"
+        android:drawableLeft="@drawable/phone"
+        android:text="Phone No" />
 
     <TextView
         android:id="@+id/textView5"
@@ -58,38 +37,106 @@
 
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="300dp"
+        android:id="@+id/or"
+        android:layout_width="308dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/imageView3"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="44dp"
-        android:layout_marginEnd="66dp"
+        android:layout_below="@+id/rct"
+        android:layout_marginEnd="47dp"
+        android:layout_marginTop="58dp"
         android:gravity="center"
-        android:text="Or"
+        android:text="or"
         android:textColor="#121212"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="299dp"
+        android:id="@+id/textView8"
+        android:layout_width="174dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView5"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="45dp"
-        android:layout_marginEnd="66dp"
-        android:gravity="center"
-        android:text="Google"
-        android:textColor="#121212"
-        android:textSize="18sp" />
+        android:layout_below="@+id/mytoolbar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left"
+        android:text="Wellcome"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
-    <ImageView
-        android:layout_centerHorizontal="true"
-        android:id="@+id/imageView3"
-        android:layout_width="67dp"
-        android:layout_height="60dp"
-        android:layout_above="@+id/textView5"
-        android:layout_marginBottom="70dp"
-        app:srcCompat="@drawable/gogle" />
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView8"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        android:gravity="left"
+        android:text="You Can Use Your Phone number or You can Continue With your Google Account"
+        android:textColor="#000000"
+        android:textSize="13dp" />
+
+    <RelativeLayout
+        android:id="@+id/rct"
+        android:layout_width="389dp"
+        android:layout_height="380dp"
+        android:layout_below="@+id/textView9"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/border">
+
+        <Button
+            android:id="@+id/google_signin"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="44dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="141dp"
+            android:text="Sign In" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/gogle" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView3"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginEnd="34dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Sign In with your Google Account"
+            android:textColor="#1B3591"
+
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="84dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Sign In"
+            android:textColor="#121212"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
 
 </RelativeLayout>
