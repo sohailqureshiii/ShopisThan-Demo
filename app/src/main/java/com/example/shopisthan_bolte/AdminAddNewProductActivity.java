@@ -44,6 +44,8 @@ public class AdminAddNewProductActivity extends AppCompatActivity {
     private DatabaseReference ProductRef;
     private ProgressDialog loadingBar;
     String uid;
+    String abcd;
+
 
     private Button AddNewProduct;
 
